@@ -1,0 +1,66 @@
+<div class="audit-content fbCol" ng-controller="AuditController">
+    <div class="audit-title fbRow">
+        <h1>Audit </h1>
+        <input class="proxy-url" name="auditUrl" ng-model="auditParams.auditUserURL" type="url" class="search-query" placeholder="Enter URL To Audit">
+        <span ng-show="auditUrl.$error.url">URL Incorrect!</span>
+    </div>
+    <div class="fbRow">
+
+        <div class="webview fbCol">
+            <audit-frame></audit-frame>
+        </div>
+        <div class="attribute-container fbCol">
+
+            <div class="single-attribute fbRow" id="attribute-thumbnail">
+                <img ng-if="auditParams.componentRenderUrl !== ''" ng-src="{{auditParams.componentRenderUrl}}" alt="Component Render">
+            </div>
+            <div class="single-attribute fbRow" id="attribute-name-area">
+                <span class="attribute-name">Name</span>
+                <input type="text" class="" value="">
+            </div>
+            <div class="single-attribute fbRow">
+                <span class="attribute-name">Sub Components</span>
+                <div class="subcomponents-container">
+                    <div>mWeb Header</div>
+                    <div>mWeb Search Box</div>
+                    <div>mWeb Search Button</div>
+                </div>
+            </div>
+            <div class="single-attribute fbRow">
+                <span class="attribute-name">Parent</span>
+                <input type="text" class="" value="" name="parent">
+            </div>
+            <div class="single-attribute fbRow">
+                <span class="attribute-name">Type</span>
+                <input type="text" class="" value="" name="type">
+            </div>
+            <div class="single-attribute fbRow">
+                <span class="attribute-name">Platform</span>
+                <input type="text" class="" value="" name="platform">
+            </div>
+            <div class="single-attribute fbRow">
+                <span class="attribute-name">Contains</span>
+                <input type="text" class="" value="" name="contains">
+            </div>
+            <div class="single-attribute fbRow">
+                <span class="attribute-name">States</span>
+                <input type="text" class="" value="" name="states">
+            </div>
+            <div class="single-attribute fbRow">
+                <span class="attribute-name">Content</span>
+                <input type="text" class="" value="{{auditParams.componentTextContent}}" name="states">
+            </div>
+
+            <div class="single-attribute fbRow">
+                <button type="button">Save</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>

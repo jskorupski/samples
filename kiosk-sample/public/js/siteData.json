@@ -1,0 +1,267 @@
+{
+    "pages": [
+        {
+            "id": "passive",
+            "data": {
+                "title": "&nbsp;",
+                "bgImg": "bg_dot.png",
+                "elements": [
+                    {
+                        "media": {
+                            "url": "ks_final.webm",
+                            "options": {
+                                "loop":"true",
+                                "url":"media/ks_final.webm"
+                            }
+                        },
+                        "linkImg": "btn_shop_yellow_tap.png",
+                        "link": "product",
+                        "initialStyles": "display:block"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "welcome",
+            "data": {
+                "title": "&nbsp;",
+                "bgImg": "bg_dot_large_repeat.jpg",
+                "elements": { 
+                    "nav": {
+                        "aImg": "btn_arrow.png",
+                        "contentImg": "btn_back.png",
+                        "class": "nav"
+                    },
+                    "header": {
+                        "contentImg": "",
+                        "class": "header"
+                    },
+                    "link": "product",
+                    "initialStyles": "display:block",
+                    "linkImg": "btn_welcome_letsgo.png",
+                    "content": {
+                        "headerImg": "sign_welcome_shop.png",
+                        "messageImg": "sign_welcome_shopcontent.png",
+                        "nextMessage": "let's go"
+                    }
+                }
+                
+            }
+        },
+        {
+            "id": "product",
+            "data": {
+                "title": "&nbsp;",
+                "bgImg": "bg_dot_large_repeat.jpg",
+                "elements": {
+                    "header": {
+                        "bgImg": "bg_product_header.png",
+                        "cartBtn": "cart_btn.png",
+                        "helpBtn": {"url":"help_btn.png","imgid":"help_btn"},
+                        "class": "header"
+                    },
+                    "content": {
+                        "bgImg": "bg_dot_large_repeat.jpg",
+                        "options": {
+                            
+                        },
+                        "trays":[
+                            {"tray_id":"1","insert_id":"btn_dot_top","count":"0,4"},
+                            {"tray_id":"2","insert_id":"btn_dot_mid","count":"4,4"},
+                            {"tray_id":"3","insert_id":"btn_dot_bot","count":"8,4"}
+                        ]
+                    },
+                    "footer": {
+                        "bgImg": "bg_product_footer.png",
+                        "contentImg": "sign_delivery.png",
+                        "class": "footer"
+                    }
+                }
+            }
+        },
+        {
+            "id": "product_detail",
+            "data": {
+                "title": "&nbsp;",
+                "bgImg": "bg_square_repeat.jpg",
+                "elements": {
+                    "nav": {
+                        "aImg": "btn_arrow.png",
+                        "contentImg": "btn_back.png",
+                        "class": "nav"
+                    },
+                    "header": {
+                        "bgImg": "",
+                        "cartBtn": "cart_btn.png",
+                        "helpBtn": {"url":"help_btn.png","imgid":"help_btn"},
+                        "class": "header"
+                    },
+                    "details": {
+                        "buttonImg":"btn_getit.png"
+                    },
+                    "footer": {
+                        "contentImg": "sign_delivery.png",
+                        "class": "footer",
+                        "bgImg": "bg_dot_repeat.jpg"
+                    }
+                }
+            }
+        },
+        {
+            "id": "order",
+            "data": {
+                "title": "&nbsp;",
+                "bgImg": "bg_dot_large_repeat.jpg",
+                "elements": {
+                    "nav": {
+                        "aImg": "btn_arrow.png",
+                        "contentImg": "btn_back.png",
+                        "class": "nav"
+                    },
+                    "header": {
+                        "bgImg": "",
+                        "cartBtn": "cart_btn.png",
+                        "helpBtn": {"url":"help_btn.png","imgid":"help_btn"},
+                        "class": "header"
+                    },
+                    "message":{
+						"contentImg": "cnt_checkout.png",
+                        "contentAgainImg": "cnt_tryagain.png",
+                        "offlineImg": "cnt_offline.png",
+                        "class": "message"
+                    },
+                    "footer": {
+                        "contentImg": "sign_delivery.png",
+                        "class": "footer"
+                    }
+                }
+            }
+        },
+        {
+            "id": "cart",
+            "data": {
+                "title": "&nbsp;",
+                "bgImg": "bg_square_repeat.jpg",
+                "elements": {
+                    "nav": {
+                        "aImg": "btn_arrow.png",
+                        "contentImg": "btn_back.png",
+                        "class": "nav"
+                    },
+                    "header": {
+                        "bgImg": "",
+                        "cartBtn": "cart_btn.png",
+                        "helpBtn": {"url":"help_btn.png","imgid":"help_btn"},
+                        "class": "header",
+                        "overlayImg": "overlay_help.png"
+                    },
+                    "content": {
+                        
+                    },
+                    "footer": {
+                        "contentImg": "sign_delivery.png",
+                        "class": "footer"
+                    }
+                }
+            }
+        },
+        {
+            "id": "thanks",
+            "data": {
+                "title": "&nbsp;",
+                "bgImg": "bg_dot_large_repeat.jpg",
+                "elements": {
+                    "nav": {
+                        "aImg": "btn_arrow.png",
+                        "contentImg": "btn_back.png",
+                        "class": "nav"
+                    },
+                    "header": {
+                        "bgImg": "",
+                        "cartBtn": "cart_btn.png",
+                        "helpBtn": {"url":"help_btn.png","imgid":"help_btn"},
+                        "class": "header"
+                    },
+                    "content": {
+                        "contentImg": "cnt_thankspage.png",
+                        "class": "content",
+                        "contentText": "close"
+                    },
+                    "footer": {
+                        "contentImg": "sign_delivery.png",
+                        "class": "footer"
+                    }
+                }
+            }
+        },
+        {
+            "id": "done",
+            "data": {
+                "title": "&nbsp;",
+                "bgImg": "bg_dot_large_repeat.jpg",
+                "elements": {
+                    "nav": {
+                        "aImg": "btn_arrow.png",
+                        "contentImg": "btn_back.png",
+                        "class": "nav"
+                    },
+                    "header": {
+                        "bgImg": "",
+                        "cartBtn": "cart_btn.png",
+                        "helpBtn": {"url":"help_btn.png","imgid":"help_btn"},
+                        "class": "header"
+                    },
+                    "content": {
+                        "contentImg": "cnt_donepage.png",
+                        "class": "content",
+                        "seeitBtn": "btn_iseeit.png",
+                        "dontseeBtn": "btn_dontseeit.png"
+                    },
+                    "footer": {
+                        "contentImg": "sign_delivery.png",
+                        "class": "footer"
+                    }
+                }
+            }
+        },
+        {
+            "id": "offline",
+            "data": {
+                "title": "&nbsp;",
+                "bgImg": "bg_dot_large_repeat.jpg",
+                "elements": {
+                    "content": {
+                        "content1": "Crud. Our systems are offline.",
+                        "content2": "BE BACK SOON!",
+                        "content3": "Saturday.com"
+                    },
+                    "footer": {
+                        "contentImg": "sign_delivery.png",
+                        "class": "footer"
+                    }
+                }
+            }
+        },
+        {
+            "id": "overlay",
+            "data": {
+                "contentImg": "WelcomeOverlay.png",
+                "bgImg": "bg_dot_large_repeat.jpg",
+                "btnImg": "btn_closeoverlay.png"
+            }
+        },
+        {
+            "id": "scroll_overlay",
+            "data": {
+                "btnImg": "btn_closeoverlay.png"
+            }
+        },
+        {
+            "id": "idle_reset_hidden_button",
+            "data": {
+            }
+        }
+
+
+    ]
+}

@@ -1,0 +1,1 @@
+node --nouse_idle_notification --max_new_space_size=2048000 --max_old_space_size=10192 -max_executable_size=10192 app.js

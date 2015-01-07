@@ -1,0 +1,4 @@
+Transaction Event Processor
+===========
+
+This is a standalone NodeJS-based data processing project that takes in very large (~4GB TSV files) of commerce transactions, and processes them and augments the data with additional remote API information, and then outputs it to a JSON array file for usage in a data visualization kiosk project ( http://skorupski.org/wiki/industry/ebay/viskiosk ). The challenges of this project involved handling very large text input files, and outputting very large JSON-based (one JSON object per line) output files, while not slowing down and overloading NodeJS memory usage (streaming data processing is key here). There are scripts in this project that tweak the Node memory usage parameters to help with the processing speed, if required for even larger input files. 

@@ -1,0 +1,39 @@
+{
+  "name": "kiosk-sample",
+  "version": "0.0.0",
+  "description": "Kiosk Sample",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jskorupski/"
+  },
+  "author": "James Skorupski",
+  "readmeFilename": "README.md",
+  "contributors": [ 
+      { "name": "James Skorupski", "email": "james.skorupski@gmail.com" },
+	  { "name": "Flynn Joffray", "email": "nucleardreamer@gmail.com" },
+  ],
+  "scripts": {
+      "start": "node app.js",
+      "nodemon": "nodemon --watch listener -e json",
+      "install-windows-service": "winser -i",
+      "uninstall-windows-service": "winser -r"
+  },
+  "dependencies": {
+      "express": "3.x", 
+      "jade": "0.x",
+      "less": "1.x",
+      "connect-assets": "2.x",
+      "colors": "0.x",
+      "twilio": "*",
+      "socket.io": "*",
+      "request": "2.16.x",
+      "winser": "0.1.x",
+      "net-ping": "1.1.x",
+      "twilio": "1.1.x"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm":  "1.1.x"
+  }
+}

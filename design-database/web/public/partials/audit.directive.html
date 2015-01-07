@@ -1,0 +1,16 @@
+<div class="auditComponent">
+
+    <div id="webiframe">
+        <iframe name="webview" width="360" height="640" ng-src="{{auditData.auditUrl}}"></iframe>
+        <div id="webiframeoverlay">
+        </div>
+    </div>
+
+    <form class="navbar-search" action="">
+        <span>Device Emulation: </span>
+        <select id="deviceselect" ng-cloak ng-model="auditData.currentDevice"
+                ng-options="i.friendlyName for i in auditData.devices"
+                ng-change="selectNewDevice()">
+        </select>
+    </form>
+</div>

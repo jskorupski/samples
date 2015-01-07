@@ -1,0 +1,7 @@
+/node_modules/
+/ebay-key.json
+/output/*
+!/output/test-500k-transactions.json
+*.log
+/input/*
+!/input/test-input.txt

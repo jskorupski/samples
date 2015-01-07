@@ -1,0 +1,29 @@
+{
+  "name": "transaction-event-processor",
+  "version": "0.0.1",
+  "description": "Script to process incoming transaction events",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --nouse_idle_notification --max_new_space_size=4048000 --max_old_space_size=10192 -max_executable_size=10192 app.js input/test-input.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.scm.corp.ebay.com/EPIC/ebay_vis_kiosk"
+  },
+  "keywords": [
+    "processor",
+    "tsv",
+    "geocode"
+  ],
+  "author": "James Skorupski <jskorupski@ebay.com>",
+  "dependencies": {
+    "JSONStream": "^0.8.2",
+    "async": "^0.7.0",
+    "colors": "^0.6.2",
+    "csv": "^0.3.7",
+    "event-stream": "^3.1.5",
+    "mkdirp": "^0.3.5",
+    "moment": "^2.5.1",
+    "request": "^2.34.0"
+  }
+}

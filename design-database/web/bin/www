@@ -1,0 +1,46 @@
+#!/usr/bin/env node
+
+if(process.env.NODE_ENV === undefined ||  process.env.NODE_ENV === 'development' ) {
+
+  var nodemon = require('nodemon');
+
+  nodemon({
+    cwd: __dirname + "/../",
+    script: 'app.js',
+    restartable: "rs",
+    ignore: [
+      //".git",
+      "public/",
+      "node_modules/**/node_modules"
+    ],
+    verbose: true,
+    watch: [
+      "app.js",
+      "lib/",
+      "routes/",
+      "bin/",
+      "bin/www",
+      "views/"
+    ],
+    env: {
+      "NODE_ENV": "development",
+      "DEBUG": "app:*"
+    },
+    ext: "js json jade"
+  });
+
+  nodemon.on('start', function () {
+    console.log('Nodemon Started');
+  }).on('quit', function () {
+    console.log('Nodemon has quit');
+  }).on('restart', function (files) {
+    console.log('App restarted due to: ', files);
+  });
+
+
+}
+else {
+
+  var app = require('../app');
+
+}

@@ -1,0 +1,122 @@
+[
+    {
+        "sale_type":-999,
+        "desc":"Unknown: Added by DW",
+        "internal_type":"unknown"
+    },
+    {
+        "sale_type":-888,
+        "desc":"Overflow: Added by DW",
+        "internal_type":"unknown"
+    },
+    {
+        "sale_type":-5,
+        "desc":"Stubhub",
+        "internal_type":"fixedprice"
+    },
+    {
+        "sale_type":-4,
+        "desc":"Half Instant Sale",
+        "internal_type":"fixedprice"
+    },
+    {
+        "sale_type":-3,
+        "desc":"Instant Sale",
+        "internal_type":"fixedprice"
+    },
+    {
+        "sale_type":-2,
+        "desc":"Group Auction",
+        "internal_type":"auction"
+    },
+    {
+        "sale_type":-1,
+        "desc":"Group Buying",
+        "internal_type":"fixedprice"
+    },
+    {
+        "sale_type":0,
+        "desc":"Unknown Auction",
+        "internal_type":"auction"
+    },
+    {
+        "sale_type":1,
+        "desc":"Chinese Auction",
+        "internal_type":"auction"
+    },
+    {
+        "sale_type":2,
+        "desc":"Dutch Auction",
+        "internal_type":"auction"
+    },
+    {
+        "sale_type":3,
+        "desc":"Auction Reverse (never implemented on Site)",
+        "internal_type":"auction"
+    },
+    {
+        "sale_type":4,
+        "desc":"Auction Yankee (never implemented on Site)",
+        "internal_type":"auction"
+    },
+    {
+        "sale_type":5,
+        "desc":"Live Auction",
+        "internal_type":"auction"
+    },
+    {
+        "sale_type":6,
+        "desc":"AdFormat: Added by DW",
+        "internal_type":"unknown"
+    },
+    {
+        "sale_type":7,
+        "desc":"Store Fixed Price",
+        "internal_type":"fixedprice"
+    },
+    {
+        "sale_type":8,
+        "desc":"Auction Personal Offer",
+        "internal_type":"auction"
+    },
+    {
+        "sale_type":9,
+        "desc":"Fixed Price",
+        "internal_type":"fixedprice"
+    },
+    {
+        "sale_type":10,
+        "desc":"WIN - Want it now",
+        "internal_type":"fixedprice"
+    },
+    {
+        "sale_type":12,
+        "desc":"Half.com Listings",
+        "internal_type":"fixedprice"
+    },
+    {
+        "sale_type":13,
+        "desc":"Lead Generation",
+        "internal_type":"unknown"
+    },
+    {
+        "sale_type":14,
+        "desc":"eBay Express Only",
+        "internal_type":"fixedprice"
+    },
+    {
+        "sale_type":15,
+        "desc":"Shopping.com (has been stopped after 2008/5/18)",
+        "internal_type":"fixedprice"
+    },
+    {
+        "sale_type":100,
+        "desc":"Review (never implemented as auction type)",
+        "internal_type":"unknown"
+    },
+    {
+        "sale_type":101,
+        "desc":"Guide (never implemented as auction type)",
+        "internal_type":"unknown"
+    }
+]

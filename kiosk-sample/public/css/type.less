@@ -1,0 +1,119 @@
+
+
+
+
+// TYPOGRAPHY ====================================================
+
+p, 
+ol, 
+ul, 
+dl, 
+address { 
+margin-bottom : @baselineheight; 
+.font-size(14);
+line-height : @baselineheight; }
+
+small { 
+.font-size(14); }
+
+ul, 
+ol { 
+margin : 0 0 @baselineheight -@gutterwidth; 
+padding : 0 0 0 @gutterwidth; }
+
+li ul, 
+li ol { 
+margin : 0;
+.font-size(16); }
+
+// blockquote
+
+blockquote  { 
+margin : 0 0 @baselineheight -@gutterwidth; 
+padding-left : @gutterwidth; 
+border-left : 2px solid @bordercolor;
+font-family : @altfont;
+font-style : normal; }
+
+q { 
+quotes : none; }
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {
+content : '';
+content : none; }
+
+cite {
+font-style : normal; } 
+
+// definition lists
+
+dl, 
+dd { 
+margin-bottom : @baselineheight;  }
+
+dt { 
+font-weight : bold; }
+
+.dl-horizontal {
+
+dt {
+float : left;
+clear : left;
+width : 20.25%;
+text-align : right; }
+
+dd {
+margin-left : 22.78%; } 
+}
+
+// text-level
+
+abbr[title] { 
+border-bottom : 1px dotted @bordercolor; 
+cursor : help; }
+
+b, strong { 
+font-weight : bold; }
+
+dfn { 
+font-style : italic; }
+
+ins { 
+background-color : lighten(@basecolor, 75%); 
+color : @textcolor; 
+text-decoration : none; }
+
+mark { 
+background-color : lighten(@basecolor, 75%); 
+color : @textcolor; 
+font-style : italic; 
+font-weight : bold; }
+
+pre, 
+code, 
+kbd, 
+samp { 
+font-family : @codefont;
+.font-size(14);
+line-height : @baselineheight; }
+
+pre { 
+white-space : pre; 
+white-space : pre-wrap; 
+word-wrap : break-word; }
+
+sub, 
+sup { 
+position : relative;
+.font-size(12);
+line-height : 0; 
+vertical-align : baselineheight; }
+
+sup { 
+top : -.5em; }
+
+sub { 
+bottom : -.25em; }

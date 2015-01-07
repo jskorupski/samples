@@ -1,0 +1,16 @@
+{
+  "name": "designdatabase-solr-insert",
+  "version": "0.0.1",
+  "description": "Insert records into SOLR from Node from our preliminary data set",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Skorupski <james.skorupski@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^0.9.0",
+    "request": "^2.51.0",
+    "solr-client": "^0.5.0"
+  }
+}

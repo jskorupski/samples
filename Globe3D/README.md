@@ -1,0 +1,4 @@
+Globe3D
+===========
+
+This a 3D globe library used by a data visualization kiosk project ( http://skorupski.org/wiki/industry/ebay/viskiosk ). It loads a GeoJSON representation of all the countries on earth, extrudes their borders into 3D (using D3 and Three.js), and then warps the geometry into a sphere. It provides touch/click/drag interaction using a customized version of the Three.JS orbit controls, and has basic functionality for CSS3D-based markers (via an overlapping DIV) that rotate in sync with the underlying WebGL geometry. In addition, this code contains the rendering functions to generate 3D transaction arcs from groups of source-to-target Latitude/Longitude pairs with customizable animation timing. The globe/country/transaction coloring is customizable through constructor parameters. 

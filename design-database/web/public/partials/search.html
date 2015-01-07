@@ -1,0 +1,88 @@
+<div class="fbRow search-container" ng-controller="SearchResultsController">
+    <div id="solrstrap-facets" class="leftnav fbCol">
+        <div ng-if="resultSets.component.selectedFacets.length > 0" class="chosen-facet">
+            <span class="nav-title">FILTERS</span><br>
+            <div class="" ng-repeat="facet in resultSets.component.selectedFacets">
+                <a class="close" ng-click="deleteFacet('component', facet.index)">&times;</a>
+                <a ng-click="deleteFacet('component', facet.index)" class="selectedNav"
+                   data-filter="{{facet.name}}:{{facet.value}}"
+                   title="{{facet.name | toTitleCase}}: {{facet.value}}">{{facet.name | toTitleCase}}: {{facet.value}}</a><br>
+            </div>
+
+        </div>
+
+        <div class="facet">
+
+            <div class="facet-group" ng-if="resultSets.component.searchResults.length > 0" class="" ng-repeat="facet in resultSets.component.facets">
+                <span class="nav-title" data-facetname="{{facet.name}}">{{facet.name | toUpperCase}}</span><br>
+                <div class="facet-entry" ng-repeat="facetValue in facet.values">
+                    <a ng-click="addFacet('component', facet.name, facetValue.valueName)" title='{{facetValue.valueName}} ({{facetValue.valueCount}})'>{{facetValue.valueName}}</a> <span class="facet-result-count">({{facetValue.valueCount}})</span><br/>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div id="solrstrap-hits" class="srp-items fbCol">
+        <div ng-if="resultSets.component.totalResults > 0" id="result-summary">
+            {{resultSets.component.totalResults}} results for <strong><i>{{searchQuery.searchTerm}}</i></strong>
+        </div>
+        <div ng-if="resultSets.component.searchResults.length == 0" id="result-summary">
+            Enter your search term above
+        </div>
+
+        <div class="srp-result-container">
+            <div class="srp-result fbCol" ng-repeat="result in resultSets.component.searchResults">
+
+                <div class="fbRow">
+                    <div class="srp-thumbnail">
+
+                        <a href="#" class="thumbnail">
+                            <img ng-src="{{result.name | toImageUrl}}" alt="Render">
+                        </a>
+
+
+                    </div>
+                    <div class="fbCol">
+                        <h3>{{result.name}}</h3>
+                        <div class="component-details fbRow">
+                            <div class="fbCol">
+                                <div class="detail-title"><strong>PLATFORMS</strong></div>
+                                <ul ng-if="result.platform.length > 0">
+                                    <li ng-repeat="plat in result.platform">{{plat}}<li>
+                                </ul>
+                            </div>
+
+                            <div class="fbCol">
+
+                                <div class="detail-title"><strong>PAGES</strong></div>
+                                <ul ng-if="result.pages.length > 0">
+                                    <li ng-repeat="page in result.pages">{{page}}<li>
+                                </ul>
+                            </div>
+                            <div class="fbCol">
+                                <div class="detail-title"><strong>STATES</strong></div>
+                                <ul ng-if="result.states.length > 0">
+                                    <li ng-repeat="state in result.states">{{state}}<li>
+                                </ul>
+                            </div>
+
+                            <div class="fbCol">
+                                <div class="detail-title"><strong>SUBCOMPONENTS</strong></div>
+                                <ul ng-if="result.contents.length > 0">
+                                    <li ng-repeat="subcomponent in result.contents">{{subcomponent}}<li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="load-more-button"><button type="button" ng-if="(resultSets.component.searchResults.length > 0) && (resultSets.component.moreResults)"ng-click="loadMoreResults('component')">Load More Results</button></div>
+    </div>
+</div>
